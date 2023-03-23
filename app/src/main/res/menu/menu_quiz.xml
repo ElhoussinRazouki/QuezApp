@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menuSaisie"
+        android:title="Saisie"
+        android:icon="@drawable/icon_saisie" />
+    <item
+        android:id="@+id/menuAfficher"
+        android:title="Afficher"
+        android:icon="@drawable/icon_view_question" />
+    <item
+        android:id="@+id/menuQuiz"
+        android:title="Quiz"
+        android:icon="@drawable/icon_quiz" />
+    <item
+        android:id="@+id/menuCategorie"
+        android:title="Categorie"
+        android:icon="@drawable/icon_categorie"/>
+    <item
+        android:id="@+id/menuLevel"
+        android:title="Level"
+        android:icon="@drawable/icon_level"/>
+</menu>

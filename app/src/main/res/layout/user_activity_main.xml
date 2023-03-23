@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_Layout_MainActivity_user"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".userActivity"
+    tools:openDrawer="start">
+
+    <LinearLayout
+        android:id="@+id/linear_layout_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/main_toolbar_user"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#F1F1F1"
+            android:gravity="start"
+            android:layout_gravity="start">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/profile_user" />
+
+            <TextView
+                android:id="@+id/nameFragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name Fragment"
+                android:textColor="#555"
+                android:textSize="20sp"
+                android:layout_marginStart="25dp"/>
+        </androidx.appcompat.widget.Toolbar>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/Frame_Layout_MainActivity_user"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linear_layout_user" />
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/buttom_navigation_view"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

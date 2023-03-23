@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="horizontal"
+        android:padding="10dp"
+>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <EditText
+                android:id="@+id/frg_categorie_edittxt_categorir"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/custom_input"
+                android:fontFamily="@font/poppins_semibold"
+                android:paddingStart="5dp" />
+        </LinearLayout>
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:id="@+id/frg_categorie_btn_delete"
+            app:iconTint="@null"
+            app:icon="@drawable/icon_delete"
+            app:iconSize="50dp"
+            android:gravity="center"
+            android:background="@color/white"
+            app:backgroundTint="@null"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/frg_categorie_btn_update"
+            android:layout_width="wrap_content"
+            android:layout_height="51dp"
+            android:background="@color/white"
+            android:gravity="center"
+            app:backgroundTint="@null"
+            app:icon="@drawable/icon_edit"
+            app:iconSize="50dp"
+            app:iconTint="@null" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
